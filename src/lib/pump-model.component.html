@@ -1,9 +1,11 @@
 <!-- Bulma is globally available. -->
 <div class="card">
-  <div class="card-header">
-    <div class="card-header-title">Example here</div>
+    <bim [files]="{
+      'TGA': {url: '/files/WW-TGA.wexbim', fixed: true},
+      'ELT': {url: '/files/WW-ELT.wexbim', visible: false}
+    }"></bim>
   </div>
   <div class="card-content">
-    <bim file="/files/WW-TGA.wexbim"></bim>
+    <p>some content here</p>
   </div>
 </div>
