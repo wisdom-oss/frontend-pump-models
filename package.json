@@ -1,0 +1,11 @@
+{
+  "name": "pump-models",
+  "version": "0.1.0",
+  "peerDependencies": {
+    "@angular/common": "^14.2.4",
+    "@angular/core": "^14.2.4"
+  },
+  "dependencies": {
+    "tslib": "^2.4.0"
+  }
+}
