@@ -1,12 +1,15 @@
 <!-- Bulma is globally available. -->
 <div class="card">
   <div class="card-image">
-    <bim [files]="{
+    <bim #bim [files]="{
       'TGA': {url: '/files/WW-TGA.wexbim', fixed: true},
       'ELT': {url: '/files/WW-ELT.wexbim', visible: false}
     }"></bim>
   </div>
   <div class="card-content">
-    <p>some content here</p>
+    <div class="field">
+      <input #bimElt id="bimElt" type="checkbox" class="switch" (input)="toggleElt($event)">
+      <label for="bimElt">ELT</label>
+    </div>
   </div>
 </div>
