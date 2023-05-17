@@ -7,7 +7,12 @@
       'ELT': {url: '/files/WW-ELT.wexbim', visible: false}
     }"></bim>
     -->
-    <ifc></ifc>
+    <ifc [models]="{
+      ARCH: {path: '/files/WW-Langeoog/20191028-4001110-WW-Arch.ifc', visible: false},
+      ELT: {path: '/files/WW-Langeoog/20191028-4001110-WW-ELT.ifc'},
+      GEL: {path: '/files/WW-Langeoog/20191028-4001110-WW-Gel.ifc', visible: false},
+      TGA: {path: '/files/WW-Langeoog/20191105-4001110-WW-TGA.ifc', fitToFrame: true}
+    }"></ifc>
   </div>
   <div class="card-content">
     <div class="field">
