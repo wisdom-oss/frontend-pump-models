@@ -1,12 +1,6 @@
 <!-- Bulma is globally available. -->
 <div class="card">
   <div class="card-image">
-    <!--
-    <bim #bim [files]="{
-      'TGA': {url: '/files/WW-TGA.wexbim', fixed: true},
-      'ELT': {url: '/files/WW-ELT.wexbim', visible: false}
-    }"></bim>
-    -->
     <ifc [models]="{
       ARCH: {path: '/files/WW-Langeoog/20191028-4001110-WW-Arch.ifc', visible: false},
       ELT: {path: '/files/WW-Langeoog/20191028-4001110-WW-ELT.ifc'},
@@ -16,8 +10,6 @@
   </div>
   <div class="card-content">
     <div class="field">
-      <input #bimElt id="bimElt" type="checkbox" class="switch" (input)="toggleElt($event)">
-      <label for="bimElt">ELT</label>
     </div>
   </div>
 </div>
