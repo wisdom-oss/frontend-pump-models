@@ -1,15 +1,17 @@
 <!-- Bulma is globally available. -->
 <div class="card">
   <div class="card-image">
-    <ifc [models]="{
-      TGA: {path: '/files/WW-Langeoog/20191105-4001110-WW-TGA.ifc', fitToFrame: true},
-      ELT: {path: '/files/WW-Langeoog/20191028-4001110-WW-ELT.ifc'},
-      ARCH: {path: '/files/WW-Langeoog/20191028-4001110-WW-Arch.ifc', visible: false},
-      GEL: {path: '/files/WW-Langeoog/20191028-4001110-WW-Gel.ifc', visible: false}
-    }" (selected)="logModel($event)"></ifc>
+    <ifc #ifc [models]="config" (selected)="updateData($event)"></ifc>
   </div>
   <div class="card-content">
-    <div class="field">
+    <div class="columns">
+      <div class="field column is-narrow" *ngFor="let m of nonFixedModels">
+        <input id="ifc-toggle-{{m}}" type="checkbox" class="switch" [checked]="config[m].visible !== false" (input)="toggleModel($event, m)">
+        <label for="ifc-toggle-{{m}}">{{m}}</label>
+      </div>
+    </div>
+    <div class="content">
+      <pre>{{data}}</pre>
     </div>
   </div>
 </div>
