@@ -10,6 +10,9 @@
         <label for="ifc-toggle-{{m}}">{{m}}</label>
       </div>
     </div>
+    <p *ngIf="showName !== ''" class="tag is-primary is-large block">
+      {{showName}}
+    </p>
     <div class="content">
       <!-- TODO: show name of model -->
       <pre>{{data}}</pre>
