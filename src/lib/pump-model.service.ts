@@ -1,8 +1,8 @@
-import {Injectable} from "@angular/core";
 import {HttpClient, HttpContext, HttpHeaders} from "@angular/common/http";
+import {Injectable} from "@angular/core";
 import {Router} from "@angular/router";
-import {Observable} from "rxjs";
 import {USE_API_URL} from "common";
+import {Observable} from "rxjs";
 
 // FIXME: set correct url here
 const BIM_API_URL = "bim/";

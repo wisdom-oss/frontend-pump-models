@@ -1,6 +1,6 @@
-import {Component, ElementRef, OnInit, ViewChild} from "@angular/core";
-import {JSONObject} from "web-ifc-three/IFC/BaseDefinitions";
+import {ViewChild, Component, OnInit, ElementRef} from "@angular/core";
 import {IfcComponent} from "common";
+import {JSONObject} from "web-ifc-three/IFC/BaseDefinitions";
 
 /** Minimalistic example Component. */
 @Component({
